@@ -1,0 +1,39 @@
+// void main () {
+//     // dynamic name = "dart";
+//     // name = 51;
+
+
+
+//     print ("hello $name!");
+
+
+// }
+
+void main () {
+    
+    double result = CalculateArea(12.5, 5, false);
+    print ('The result for area of rectangle is ' + result.toString());
+
+    result = CalculateArea(12.5, 5, true);
+    print ('The result for area of triangle is ' + result.toString());
+
+
+}
+
+double CalculateArea(double width, double height, bool isTriangle){
+    double area;
+    if (isTriangle)
+    {
+        area = width * height /2;
+
+    } else{
+        area = width * height;
+    }
+
+    return area;
+}
+
+
+
+
+
